@@ -6,6 +6,7 @@ class Employee {
 
 class TeachingStaff extends Employee {
   late String subject;
+  
 }
 
 class Labassistant extends Employee {
