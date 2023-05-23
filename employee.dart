@@ -1,22 +1,20 @@
 class Employee {
   late int empNo;
   late String empName;
-  late double salary;
+  late int salary;
 }
 
 class TeachingStaff extends Employee {
   late String subject;
-  
+  TeachingStaff(this.subject);
 }
 
-class Labassistant extends Employee {
-  late String labName;
+class NonTeachingStaff extends Employee {
+  late String department;
 }
 
 void main() {
-  TeachingStaff emp = TeachingStaff();
-  emp.empName = "nithin";
-  emp.subject = "maths";
-  emp.empNo = 1;
-  emp.salary = 30000;
+  TeachingStaff teacher = TeachingStaff("Maths");
+  teacher.salary = 300;
+  print(teacher.salary);
 }

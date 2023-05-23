@@ -1,5 +1,4 @@
 void main() {
-  
   Student student1 = Student("Rahul", 10, 1, 90);
   print(student1.name);
 }
